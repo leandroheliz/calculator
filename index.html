@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./calculator.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- Calculator -->
+    <div class="container contenedor">
+      <div id="calculator">
+        <form name="calculator">
+          <input
+            type="textfield"
+            name="ans"
+            value=""
+            autocomplete="off"
+            readonly
+          />
+          <input
+            type="button"
+            value="7"
+            onclick="document.calculator.ans.value+='7'"
+            class="num"
+          />
+          <input
+            type="button"
+            value="8"
+            onclick="document.calculator.ans.value+='8'"
+            class="num"
+          />
+          <input
+            type="button"
+            value="9"
+            onclick="document.calculator.ans.value+='9'"
+            class="num"
+          />
+          <input
+            type="button"
+            value="+"
+            onclick="document.calculator.ans.value+='+'"
+            class="op"
+          />
+          <br />
+          <input
+            type="button"
+            value="4"
+            onclick="document.calculator.ans.value+='4'"
+            class="num"
+          />
+          <input
+            type="button"
+            value="5"
+            onclick="document.calculator.ans.value+='5'"
+            class="num"
+          />
+          <input
+            type="button"
+            value="6"
+            onclick="document.calculator.ans.value+='6'"
+            class="num"
+          />
+          <input
+            type="button"
+            value="-"
+            onclick="document.calculator.ans.value+='-'"
+            class="op"
+          />
+          <br />
+          <input
+            type="button"
+            value="1"
+            onclick="document.calculator.ans.value+='1'"
+            class="num"
+          />
+          <input
+            type="button"
+            value="2"
+            onclick="document.calculator.ans.value+='2'"
+            class="num"
+          />
+          <input
+            type="button"
+            value="3"
+            onclick="document.calculator.ans.value+='3'"
+            class="num"
+          />
+          <input
+            type="button"
+            value="X"
+            onclick="document.calculator.ans.value+='*'"
+            class="op"
+          />
+          <br />
+          <input
+            type="button"
+            value="0"
+            onclick="document.calculator.ans.value+='0'"
+            class="num"
+          />
+          <input type="reset" value="C" class="c" />
+          <input
+            type="button"
+            value="="
+            onclick="document.calculator.ans.value=eval(document.calculator.ans.value)"
+            class="igual"
+          />
+          <input
+            type="button"
+            value="/"
+            onclick="document.calculator.ans.value+='/'"
+            class="op"
+          />
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
